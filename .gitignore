@@ -77,3 +77,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.tlog
+*.idb
+*.db
+proj.win32/Cocos2dxWebSocket.VC.VC.opendb
+*.d
+*.apk
+proj.android/local.properties
