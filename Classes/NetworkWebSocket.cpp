@@ -125,7 +125,7 @@ void NetworkWebSocket::onOpen(network::WebSocket * ws)
 void NetworkWebSocket::onMessage(network::WebSocket * ws, const network::WebSocket::Data & data)
 {
 	if(_onMessageReceivedCallBack != nullptr)
-		_onMessageReceivedCallBack(data.bytes);
+		_onMessageReceivedCallBack(std::string(data.bytes, data.len));
 }
 
 void NetworkWebSocket::onClose(network::WebSocket * ws)
